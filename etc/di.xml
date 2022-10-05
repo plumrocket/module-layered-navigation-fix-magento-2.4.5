@@ -1,0 +1,12 @@
+<?xml version="1.0" ?>
+<!--
+ * @package     Plumrocket_ProductFilterFixMagento245
+ * @copyright   Copyright (c) 2022 Plumrocket Inc. (https://plumrocket.com)
+ * @license     https://plumrocket.com/license   End-user License Agreement
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <type name="Magento\Catalog\Block\Product\ProductList\Toolbar">
+        <plugin name="update_toolbar_count" disabled="true"/>
+    </type>
+	<preference for="Magento\Elasticsearch\Model\ResourceModel\Fulltext\Collection\SearchResultApplier" type="Plumrocket\ProductFilterFixMagento245\Model\ResourceModel\Fulltext\Collection\SearchResultApplier"/>
+</config>

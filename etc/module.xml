@@ -1,0 +1,13 @@
+<?xml version="1.0" ?>
+<!--
+ * @package     Plumrocket_ProductFilterFixMagento245
+ * @copyright   Copyright (c) 2022 Plumrocket Inc. (https://plumrocket.com)
+ * @license     https://plumrocket.com/license   End-user License Agreement
+ -->
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:framework:Module/etc/module.xsd">
+	<module name="Plumrocket_ProductFilterFixMagento245">
+		<sequence>
+			<module name="Magento_Elasticsearch"/>
+		</sequence>
+	</module>
+</config>
