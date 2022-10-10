@@ -143,7 +143,7 @@ class SearchResultApplier extends \Magento\Elasticsearch\Model\ResourceModel\Ful
             // Check that current page is in a range of allowed page numbers, based on items count and items per page,
             // than calculate offset for slicing items array.
             $itemsCount = count($items);
-            $maxAllowedPageNumber = ceil($itemsCount/$size);
+            $maxAllowedPageNumber = (int) ceil($itemsCount/$size);
             if ($currentPage < 1) {
                 $currentPage = 1;
             }
@@ -294,4 +294,3 @@ class SearchResultApplier extends \Magento\Elasticsearch\Model\ResourceModel\Ful
         );
     }
 }
-
